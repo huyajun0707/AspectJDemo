@@ -68,7 +68,7 @@ public class TraceAspect {
         Fragment fragment = objects.length == 0 ? null : (Fragment) objects[0];
         boolean isShow = false;
         if (objects.length > 2) {
-            isShow = (boolean) objects[1];
+            isShow = (boolean) objects[2];
             TraceInfo traceInfo = (TraceInfo) objects[2];
             Log.e("--->", "onFragmentUserVisible: " + isShow);
             if (isShow) {
